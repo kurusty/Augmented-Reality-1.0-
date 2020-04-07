@@ -3,7 +3,3 @@ Augmented reality on the web. Compiled and edited mainly from [@jeromeetienne](h
 For more advanced and detailed information, please refer to [AR.js](https://github.com/AR-js-org/AR.js) in GitHub.
 
 Happy coding everyone!
-
-
-|    |
-
