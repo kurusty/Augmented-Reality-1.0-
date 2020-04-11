@@ -16,8 +16,7 @@
         
       </script>
        </head>
-
-    </head>
+       
    <body>
       <a-scene vr-mode-ui="enabled: false" artoolkit='sourceType: webcam; detectionMode: mono; maxDetectionRate: 90;' arjs='debugUIEnabled: false;detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
          <!--  ALL  ASSETS  -->
@@ -26,18 +25,14 @@
     <!--   3D MODEL -->
             <a-entity  id="model" src=" INSERT URL SOURCE MODEL 3D HERE  " crossorigin="anonymous" rotation="-90 0 -90" position="0 0 0">
             </a-entity>
-            
-    <!--   IMAGE -->
-            <img id="img" src=" INSERT URL SOURCE IMAGE HERE ">
-            
+        
          </a-assets>
          
          <!--  ALL  ASSETS  -->
          <a-marker type="pattern" preset="pattern" url=" INSERT URL FOR MARKER PATTERN HERE  ">
            <a-box id="loadingEl"></a-box>
            <a-entity loader> 
-           
-            <a-image width="5" height="2" material='transparent:true;shader:flat;side:double;src:#img' position="0 0 1" rotation="-90 0 0"></a-image>
+          
             <a-entity position="0 0 0" gltf-model="#model"  material='transparent:true;shader:flat;side:double;metelness:2' rotation="0 0 0" scale="0.25 0.25 0.25"  shadow="receive: false"  >
             
             </a-entity>
@@ -49,5 +44,3 @@
       </a-scene>
    </body>
 </html>
-
-</a-marker-camera>
